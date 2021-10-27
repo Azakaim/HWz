@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 
 namespace Homework_Theme_03
 {
@@ -123,7 +118,7 @@ namespace Homework_Theme_03
                             $"\n───▐░█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█░▌───" +
                             $"\n───▐░▀▄▄█▄▄█▄▄█▄▄█▄▄█▄▄▀░▌───" +
                             $"\n───▐░░░░░░░░░░░░░░░░░░░░░▌───");
-                        MusicWins();j++;
+                        j++;
                         #endregion
                         j++;
                     }
@@ -165,7 +160,7 @@ namespace Homework_Theme_03
                                  $"\n                        █████▄░░░└┴┴┴┴┴┴┴┘░░░▄█████" +
                                  $"\n                        ███████▄░░░░░░░░░░░▄███████" +
                                  $"\n                        ██████████▄▄▄▄▄▄▄██████████");
-                        MusicWins();
+                        
                         #endregion
                         j++;
                     }
@@ -229,7 +224,7 @@ namespace Homework_Theme_03
                             $"\n───▐░█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█░▌───" +
                             $"\n───▐░▀▄▄█▄▄█▄▄█▄▄█▄▄█▄▄▀░▌───" +
                             $"\n───▐░░░░░░░░░░░░░░░░░░░░░▌───");
-                        MusicWins();
+                        
                         #endregion
 
                         j++;
@@ -277,7 +272,7 @@ namespace Homework_Theme_03
                             $"\n───▐░█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█░▌───" +
                             $"\n───▐░▀▄▄█▄▄█▄▄█▄▄█▄▄█▄▄▀░▌───" +
                             $"\n───▐░░░░░░░░░░░░░░░░░░░░░▌───");
-                        MusicWins();
+                        
                         #endregion
                         j++;
                         break;
@@ -324,7 +319,7 @@ namespace Homework_Theme_03
                             $"\n───▐░█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█░▌───" +
                             $"\n───▐░▀▄▄█▄▄█▄▄█▄▄█▄▄█▄▄▀░▌───" +
                             $"\n───▐░░░░░░░░░░░░░░░░░░░░░▌───");
-                        MusicWins();
+                        
                         #endregion
                         j++;
                         break;
@@ -370,7 +365,7 @@ namespace Homework_Theme_03
                             $"\n───▐░█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█░▌───" +
                             $"\n───▐░▀▄▄█▄▄█▄▄█▄▄█▄▄█▄▄▀░▌───" +
                             $"\n───▐░░░░░░░░░░░░░░░░░░░░░▌───");
-                        MusicWins();
+                        
                         #endregion
                         j++;
                         break;
@@ -403,52 +398,6 @@ namespace Homework_Theme_03
 
             Console.ReadKey();
         }
-
-        //Создал приватный класc ,который отвечает за муз.сопровождение для результатов Wins
-        private static void MusicWins() 
-        { 
-          Console.Beep(784,150);
-          Console.Beep(784,150);
-          Console.Beep(932,150);
-          Console.Beep(1047,150);
-          Console.Beep(784,150);
-          Console.Beep(784,150);
-          Console.Beep(699,150);
-          Console.Beep(740,150);
-          Console.Beep(784,150);
-          Console.Beep(784,150);
-          Console.Beep(932,150);
-          Console.Beep(1047,150);
-          Console.Beep(784,150);
-          Console.Beep(784,150);
-          Console.Beep(699,150);
-          Console.Beep(740,150);
-          Console.Beep(932,150);
-          Console.Beep(784,150);
-          Console.Beep(587,1200);
-          Console.Beep(932,150);
-          Console.Beep(784,150);
-          Console.Beep(554,1200);
-          Console.Beep(932,150);
-          Console.Beep(784,150);
-          Console.Beep(523,1200);
-          Console.Beep(466,150);
-          Console.Beep(523, 150);
-        }
-
-        //Создал приватный класc ,который отвечает за муз.сопровождение для заставки на начало игры
-        private static void MusicStart()
-            {
-            Console.Beep(300, 500);
-            Console.Beep(300, 500);
-            Console.Beep(300, 500);
-            Console.Beep(250, 500);
-            Console.Beep(350, 250);
-            Console.Beep(300, 500);
-            Console.Beep(250, 500);
-            Console.Beep(350, 250);
-            Console.Beep(300, 500);
-            }
 
         static void Main(string[] args)
 
@@ -543,9 +492,6 @@ namespace Homework_Theme_03
             //курсора
             
             Console.WriteLine(z);
-
-            //вызвал созданный мной приватный класс  MusicStart для подзвучки начала игры 
-            MusicStart();
 
             //вызвал метод отвечающий за сброс цвета до настроек по умолчанию
             Console.ResetColor();
@@ -736,7 +682,7 @@ namespace Homework_Theme_03
                         {
                             Console.WriteLine($"\nТехнический нокаут ,победа присуждается: {nick2}");
                             TechnicalNokautTwo++;
-                            MusicWins();
+                            
                             fatality++; break;
                         }
 
@@ -753,7 +699,7 @@ namespace Homework_Theme_03
                                  $"\n░░▀░░ ░▀░ ░▀░     ░▀░▀░ ▀ ▀░░▀ ▀▀░" +
                                  $"   {nick1}!!!");
                             WinsOne++;
-                            MusicWins();
+                            
                             fatality++;
                             break;
                         }
@@ -830,7 +776,7 @@ namespace Homework_Theme_03
                             {
                             Console.WriteLine($"\nТехнический нокаут ,победа присуждается: {nick1}");
                             TechnicalNokautOne++;
-                             MusicWins();
+                            
                              fatality++; break;
                             }
                             //вызвал оператор if для ветвления структуры цикла
@@ -845,7 +791,7 @@ namespace Homework_Theme_03
                              $"\n░░▀░░ ░▀░ ░▀░     ░▀░▀░ ▀ ▀░░▀ ▀▀░" +
                              $"   {nick2}!!!");
                             WinsTwo++;
-                            MusicWins();
+                            
                             fatality++;break;
                              }
 
@@ -897,7 +843,7 @@ namespace Homework_Theme_03
 
             Console.ReadKey();
             #endregion
-
+            
             #region Age2(Winner vs Computer)
             //вызвал оператор if для ветвления структуры цикла 
             //при истинности значений отвечающего за вход в игру с компьютером
